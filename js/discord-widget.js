@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
     request.send();
     request.onload = function () {
         var discord = request.response;
-        document.querySelector('.discord-invite-header-count').innerHTML = '<div class="discord-invite-header-online-status"></div>' + discord['presence_count'] + ' в сети';
+        document.querySelector('.discord-invite-header-count').innerHTML = '<div class="discord-invite-header-online-status"></div>' + discord['presence_count'] + ' online';
     }
 });
